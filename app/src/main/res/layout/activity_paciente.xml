@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paciente">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="REGISTRO"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnSalir"
+        android:layout_width="91dp"
+        android:layout_height="94dp"
+        android:background="@null"
+        android:padding="8dp"
+        android:src="@drawable/off"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnRojoGrande"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:text="EMERGENCIA"
+        android:textSize="50sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F44336"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/titulo"/>
+    <Button
+        android:id="@+id/btnHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HORARIOS"
+        android:textSize="50sp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRojoGrande"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
