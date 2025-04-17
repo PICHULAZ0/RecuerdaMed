@@ -25,7 +25,7 @@
         android:id="@+id/btnVolver"
         android:layout_width="76dp"
         android:layout_height="94dp"
-        android:background="@null"
+        android:background="@color/transparent"
         android:padding="8dp"
         android:src="@drawable/left"
         android:scaleType="fitCenter" />

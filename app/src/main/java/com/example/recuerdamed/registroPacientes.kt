@@ -14,7 +14,7 @@ class registroPacientes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_registro_pacientes)
-        val iniciar = findViewById<ImageButton>(R.id.btnGuardar)
+        val iniciar = findViewById<Button>(R.id.btnGuardar)
 
         val registrar = findViewById<ImageButton>(R.id.btnVolver)
 
