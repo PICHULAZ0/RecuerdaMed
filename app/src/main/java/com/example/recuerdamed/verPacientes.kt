@@ -14,12 +14,19 @@ class verPacientes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_ver_pacientes)
+        val medicamentos = findViewById<Button>(R.id.btn1)
+
         val iniciar = findViewById<Button>(R.id.btn2)
 
         val registrar = findViewById<Button>(R.id.btn3)
 
         val volver = findViewById<ImageButton>(R.id.btnVolver)
 
+        medicamentos.setOnClickListener {
+
+            fnMedica()
+
+        }
         volver.setOnClickListener {
 
             fnVolver()
@@ -37,6 +44,12 @@ class verPacientes : AppCompatActivity() {
             fnIniciar()
         }
     }
+    private fun fnMedica(){
+        val intent = Intent(this,verMedicamentos::class.java)
+        startActivity(intent)
+        finish()
+    }
+
     private fun fnIniciar(){
         val intent = Intent(this,establecerHorarios::class.java)
         startActivity(intent)

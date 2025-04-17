@@ -48,8 +48,9 @@
     <TextView
         android:layout_width="350dp"
         android:layout_height="300dp"
-        android:text="NOTIFICACIONES"
-        android:textSize="30sp"
+        android:text="NOTIFICACIONES\n\nPaciente1: Recibio el aviso"
+
+        android:textSize="20sp"
         android:textAlignment="center"
         android:gravity="center"
         android:layout_marginVertical="30dp"
