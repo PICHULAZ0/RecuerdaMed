@@ -9,21 +9,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class pacientes : AppCompatActivity() {
+class registroPacientes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_pacientes)
-        val iniciar = findViewById<ImageButton>(R.id.ib1)
+        setContentView(R.layout.activity_registro_pacientes)
+        val iniciar = findViewById<ImageButton>(R.id.btnGuardar)
 
         val registrar = findViewById<ImageButton>(R.id.btnVolver)
 
-        val paciente1 = findViewById<Button>(R.id.btn1)
 
-        paciente1.setOnClickListener {
 
-            fnP1()
-        }
+
 
         registrar.setOnClickListener {
 
@@ -37,22 +34,17 @@ class pacientes : AppCompatActivity() {
         }
     }
     private fun fnIniciar(){
-        val intent = Intent(this,registroPacientes::class.java)
+        val intent = Intent(this,pacientes::class.java)
         startActivity(intent)
         finish()
 
 
     }
     private fun fnVolver(){
-        val intent = Intent(this,cuidador::class.java)
-        startActivity(intent)
-        finish()
-    }
-    private fun fnP1(){
-        val intent = Intent(this,verPacientes::class.java)
+        val intent = Intent(this,pacientes::class.java)
         startActivity(intent)
         finish()
 
-    }
 
+    }
 }

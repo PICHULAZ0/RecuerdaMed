@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registroPacientes">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="REGISTRO"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="91dp"
+        android:layout_height="94dp"
+        android:background="@null"
+        android:padding="8dp"
+        android:src="@drawable/left"
+        android:scaleType="fitCenter" />
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="NOMBRE:"
+        android:textSize="40sp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="EMAIL:"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/et1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="USUARIO:"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/et2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="CONTRASEÑA:"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/et3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Guardar y Continuar"
+        android:textSize="30sp"
+        android:backgroundTint="@color/green"
+        android:id="@+id/btnGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/et4"
+        android:layout_marginTop="50dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

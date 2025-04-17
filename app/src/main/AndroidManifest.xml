@@ -13,6 +13,9 @@
         android:theme="@style/Theme.RecuerdaMed"
         tools:targetApi="31">
         <activity
+            android:name=".registroPacientes"
+            android:exported="false" />
+        <activity
             android:name=".verPacientes"
             android:exported="false" />
         <activity
