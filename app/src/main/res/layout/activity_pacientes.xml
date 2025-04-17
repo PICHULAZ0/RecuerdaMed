@@ -28,7 +28,9 @@
         android:background="@color/transparent"
         android:padding="8dp"
         android:src="@drawable/left"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageButton
         android:id="@+id/ib1"
